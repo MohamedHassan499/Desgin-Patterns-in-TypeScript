@@ -19,7 +19,7 @@ Here is a conversation between two Engineers discussing about its importance :)
     B: Its not going to be that simple, what If It will come from a resource-intensive thing and you might not
      use it in the end? Singleton will make a use of it if necessary.
 
-![We don't do that here](RUdPyQP.jpg)
+![We don't do that here](img/RUdPyQP.jpg)
 
     A: Ok, this doesn't seem to be really difficult.
 
@@ -87,9 +87,9 @@ class DatabaseConnect {
 
     A: Yes, I think so.
 
-![I didn't see that coming](well-i-didnt-no36b1.jpg)
+![I didn't see that coming](img/well-i-didnt-no36b1.jpg)
 
 
 ## UML Diagram
 
-![UML diagram](singleton-diagram.png)
+![UML diagram](img/singleton-diagram.png)
