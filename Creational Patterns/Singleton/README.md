@@ -76,7 +76,7 @@ class DatabaseConnect {
 
     }
 
-    public static MyClass getInstance() {
+    public static DatabaseConnect getInstance() {
         return new DatabaseConnect();
     }
 }
