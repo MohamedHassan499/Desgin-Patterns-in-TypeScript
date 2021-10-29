@@ -5,16 +5,21 @@ It might be one the simplest design patterns in terms of class diagram (It has o
 
 ## Motivation
 Here is a conversation between two Engineers discussing about its importance :)
-
+    
+    
     A: Why do we even use it?
 
-    B: Where are many objects that may be instanciated from a class and we're only interested in one like: Thread pools, Caches, dialog boxes, and database connections, instanciating any other object will result in overusing available resources for the application, therefore making them busy, or even lead to misbehavoiur.
+    B: Where are many objects that may be instanciated from a class and we're only 
+    interested in one like: Thread pools, Caches, dialog boxes, and database connections, 
+    instanciating any other object will result in overusing available resources for the application, 
+    therefore making them busy, or even lead to misbehavoiur.
 
     A: Ok, so Instead of using one object for them, why just not using a global variable? Easy beasy 😃
 
-    B: Its not going to be that simple, what If It will come from a resource-intensive thing and you might not use it in the end? Singleton will make a use of it if necessary.
+    B: Its not going to be that simple, what If It will come from a resource-intensive thing and you might not
+     use it in the end? Singleton will make a use of it if necessary.
 
-![We don't do that here](RUdPyQP.jpg)
+![We don't do that here](img/RUdPyQP.jpg)
 
     A: Ok, this doesn't seem to be really difficult.
 
@@ -42,7 +47,8 @@ class DatabaseConnect {
 }
 ```
 
-    A: Hmm, It won't be possible to instanciate one from it if its private. I can only call the constructor within the class itself, than doesn't make much of a sense for me 🤕
+    A: Hmm, It won't be possible to instanciate one from it if its private. I can only call the 
+    constructor within the class itself, than doesn't make much of a sense for me 🤕
     
     B: Excellent, can you tell me that this means?
 
@@ -57,7 +63,8 @@ class DatabaseConnect {
 
     B: Good, why you used the class name to call it?
 
-    A: Because it is a static method; in other words, it is a CLASS method. You need to use the class name to reference a static method.
+    A: Because it is a static method; in other words, it is a CLASS method. You need to use the 
+    class name to reference a static method.
 
     B: Perfect. What If we put all things together? 
     Can I now Instanciate my class?
@@ -69,7 +76,7 @@ class DatabaseConnect {
 
     }
 
-    public static MyClass getInstance() {
+    public static DatabaseConnect getInstance() {
         return new DatabaseConnect();
     }
 }
@@ -80,9 +87,9 @@ class DatabaseConnect {
 
     A: Yes, I think so.
 
-![I didn't see that coming](well-i-didnt-no36b1.jpg)
+![I didn't see that coming](img/well-i-didnt-no36b1.jpg)
 
 
 ## UML Diagram
 
-![UML diagram](singleton-diagram.png)
+![UML diagram](img/singleton-diagram.png)
