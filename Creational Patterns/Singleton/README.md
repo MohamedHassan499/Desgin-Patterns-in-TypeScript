@@ -54,7 +54,7 @@ class DatabaseConnect {
 
 ```typescript
 class DatabaseConnect {
-    public static DatabaseConnect getInstance() {
+    public static getInstance(): DatabaseConnect {
 
     }
 }
@@ -76,7 +76,7 @@ class DatabaseConnect {
 
     }
 
-    public static DatabaseConnect getInstance() {
+    public static getInstance(): DatabaseConnect {
         return new DatabaseConnect();
     }
 }
