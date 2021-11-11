@@ -9,7 +9,8 @@ Here is a conversation between two Engineers discussing about its importance :)
     A: Welcome back buddy. Long time no see!
     B: Yeah you too, its been a while.
 
-    A: Yup. As usual, we have a new challenge to overcome. We'll build software simulating a Pizza store where customer can order pizza.
+    A: Yup. As usual, we have a new challenge to overcome. We'll build software simulating a Pizza store
+    where customer can order pizza.
     What do you think?
 
     B: I don't think this one will be much of a problem than the others, you can start giving ideas :)
@@ -22,7 +23,8 @@ Here is a conversation between two Engineers discussing about its importance :)
     And make other subclasses (Different types of pizzas) to inhert these methods.
     B: Ok, this is a good start. What else?
 
-    A: Then, in the client, we'd make a method called "orderPizza" and based on the specified type of pizza, we'd make an instance of that subclass. Like that.
+    A: Then, in the client, we'd make a method called "orderPizza" and based on the specified type of pizza, 
+    we'd make an instance of that subclass. Like that.
 
 ```TypeScript
     public orderPizza(type: string): Pizza{
@@ -38,7 +40,10 @@ Here is a conversation between two Engineers discussing about its importance :)
         return pizza;
     }
 ```
-    B: As a start, this seems to be great for me. But this restaurant will have a lot of competitors, in addition to that, lots of crazy cheifs likes to make their own pizza style, thus add new pizzas'. In terms of that code, everywhere you have the "orderPizza" method anywhere in the class, you've to change it everywhere and add the new type of pizza. This will be a pain in the ass.
+    B: As a start, this seems to be great for me. But this restaurant will have a lot of competitors,
+    in addition to that, lots of crazy cheifs likes to make their own pizza style, thus add new pizzas'.
+    In terms of that code, everywhere you have the "orderPizza" method anywhere in the class, you've 
+    to change it everywhere and add the new type of pizza. This will be a pain in the ass.
 
 ```TypeScript
     public orderPizza(type: string): Pizza{
@@ -72,7 +77,8 @@ Here is a conversation between two Engineers discussing about its importance :)
 
 > According to one of the S.O.L.I.D priciples, your class(es) should be: _Open for extension, closed for modification_.
 
-    B: Everytime you want to add a new type of pizza, you have to hardcode it everwhere in the codebase and modify that method. Maybe
+    B: Everytime you want to add a new type of pizza, you have to hardcode it everwhere in the codebase
+    and modify that method. Maybe
     having somekind of wrapper to every clinet wants to access this method will be much better.
     That is from where we should have a FACTORY to all of the clients.
 
